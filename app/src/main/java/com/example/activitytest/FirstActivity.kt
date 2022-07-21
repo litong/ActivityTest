@@ -19,6 +19,7 @@ class FirstActivity : AppCompatActivity() {
         setContentView(view)
         binding.Button1.setOnClickListener {
             val intent = Intent("com.example.activitytest.ACTION_START")
+            intent.addCategory("com.example.activitytest.MY_CATEGORY")
             startActivity(intent)
         }
     }
