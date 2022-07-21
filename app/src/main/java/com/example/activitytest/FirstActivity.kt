@@ -18,7 +18,7 @@ class FirstActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.Button1.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+            val intent = Intent("com.example.activitytest.ACTION_START")
             startActivity(intent)
         }
     }
