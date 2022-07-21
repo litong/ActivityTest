@@ -17,7 +17,7 @@ class FirstActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.Button1.setOnClickListener {
-            Toast.makeText(this, "You clicked Button 1", Toast.LENGTH_SHORT).show()
+            finish()
         }
     }
 
